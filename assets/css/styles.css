@@ -79,7 +79,7 @@ body.dark-theme{
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 12%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%); 
 }
 
 
@@ -370,6 +370,30 @@ img {
   border-radius: .5rem;
   font-weight: var(--font-medium);
 }
+
+.form-submit-button{
+  display: inline-block;
+  background-color: var(--first-color);
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  border: none;
+
+  /* border-style: outset; */
+	border-color: var(--first-color);
+	text-shadow: var(--first-color);
+  box-shadow: none;
+  
+}
+
+.form-submit-button:hover{
+  background-color: var(--first-color-alt); 
+  cursor: pointer; 
+}
+
 
 .button:hover{
   background-color: var(--first-color-alt);
@@ -758,7 +782,7 @@ img {
 }
 
 .portfolio__img1{
-  width: 155px;
+  width: 256px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -849,8 +873,8 @@ img {
 }
 
 .testimonial__img{
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   margin-right: var(--mb-0-75);
 }
@@ -870,7 +894,12 @@ img {
 }
 
 .testimonial__icon-star{
+  
   color: var(--first-color);
+}
+
+.testimonial__button:hover .button__icon{
+  transform: translateX(.25rem);
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1040,6 +1069,10 @@ img {
   }
   .home__blob{
     width: 180px;
+  }
+
+  .home__img{
+    width: 50px;
   }
 
   .skills__title{
