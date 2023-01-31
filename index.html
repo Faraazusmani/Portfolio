@@ -661,29 +661,6 @@
             
                 <div class="testimonial__container container swiper-container">
                     <div class="swiper-wrapper">
-                        <!--==================== TESTIMONIAL 1 ====================-->
-                        <div class="testimonial__content grid swiper-slide">
-                            <div class="testimonial__data">
-                                <div class="testimonial__header">
-                                    <img src="assets/img/david.jpg" alt="" class="testimonial__img">
-
-                                    <div>
-                                        <h3 class="testimonial__name">Ashish David Rao</h3>
-                                        <span class="testimonial__client">Client</span>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                </div>
-                            </div>
-
-                            <p class="testimonial__description">Got what I wanted and was simply taken away by the results</p>
-                        </div>
 
                         <!--==================== TESTIMONIAL 2 ====================-->
                         <div class="testimonial__content grid swiper-slide">
@@ -709,6 +686,31 @@
                             <p class="testimonial__description">Faraaz is terrific at his work! Highly creative as well as practical. He is very appraochable and flexible. He remained just as enthusiastic and helpful until the very end. I highly recommend Faraaz and look forward to working with him going forward</p>
                         </div>
 
+
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content grid swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/david.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Ashish David Rao</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">He has great clarity of things and passion to deliver the best. Highly recommended</p>
+                        </div>
+
                         <!--==================== TESTIMONIAL 3 ====================-->
                         <div class="testimonial__content grid swiper-slide">
                             <div class="testimonial__data">
@@ -730,7 +732,7 @@
                                 </div>
                             </div>
 
-                            <p class="testimonial__description">Made the best decision by choosing Faraaz to help me create my brand logo and website</p>
+                            <p class="testimonial__description">Made the best decision by choosing Faraaz to help me take my venture forward</p>
                         </div>
                     </div>
                     
@@ -779,8 +781,8 @@
                         </div>
                     </div>
 
-                    <!-- <form method="post" action="https://script.google.com/macros/s/AKfycby9ljbZ1uO4DD5LSGnDu7wiwGf3_zwoM4JBbx0-zirQ05Ll7dKTQpSvEFRgSON0sl5g/exec" class="contac__form grid"> -->
-                    <form action="" class="contact__form grid">
+                    <form method="post" action="https://script.google.com/macros/s/AKfycbzktzVWdv-tZ_2ApnDdH3tuKDrsML6r5hxTCxi3Z3PKm_jlGcoMOx6hvfxy0o5xSZH6fw/exec" name="f1" class="contact__form grid">
+                    <!-- <form action="" class="contact__form grid"> -->
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -803,12 +805,50 @@
 
                         <div>
                             <!-- <a href="#" class="button button--flex" onsubmit="alert('Thank You for connecting!')"> -->
-                            <a href="#" class="button button--flex">
-                            <!-- <button type="submit" value="submit" class="button button--flex" onsubmit="alert('Thank You for connecting!')">Send Message</button> -->
+                            <!-- <a href="" class="button button--flex"> -->
+                            <button type="submit" value="submit" class="form-submit-button">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            <!-- </a> -->
+                            </button>
                         </div>
+
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbzktzVWdv-tZ_2ApnDdH3tuKDrsML6r5hxTCxi3Z3PKm_jlGcoMOx6hvfxy0o5xSZH6fw/exec'
+                            const form = document.forms['f1']
+                          
+                            form.addEventListener('submit', e => {
+                              e.preventDefault()
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => alert("Thank you! your message has been sent successfully." ))
+                                .then(() => {  window.location.reload(); })
+                                .catch(error => console.error('Error!', error.message))
+                            })
+                          </script>
+
+                        <!-- <script>
+                            const form = document.querySelector("#form")
+                            const submitButton = document.querySelector("#submit")
+                            const scriptURL = "https://script.google.com/macros/s/AKfycbzktzVWdv-tZ_2ApnDdH3tuKDrsML6r5hxTCxi3Z3PKm_jlGcoMOx6hvfxy0o5xSZH6fw/exec"
+                         
+                            form.addEventListener('submit', e => {
+                              submitButton.disabled = true
+                              e.preventDefault()
+                              let requestBody = new FormData(form)
+                              fetch(scriptURL, { method: 'POST', body: requestBody})
+                                .then(response => {
+                                   alert('Success!', response)
+                                   submitButton.disabled = false
+                                  })
+                                .catch(error => {
+                                alert('Error!', error.message)
+                                  submitButton.disabled = false
+                         
+                                }
+                                )
+                            })
+                         </script> -->
+
 
                     </form>
                 </div>
