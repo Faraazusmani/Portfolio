@@ -571,7 +571,7 @@
                             
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Securing Traditional Pension System using Blockchain</h3>
-                                <p class="portfolio__description">Created an award-winning, smart contracts based blockchain system to decentralize the pension system and add maximum security</p>
+                                <p class="portfolio__description">Created award winning, smart contracts based blockchain to decentralise the pension system and add maximum security</p>
                                 <a href="https://github.com/Faraazusmani/Blockchain-Secured-Pension-System" target="_blank" class="button button--flex button--small portfolio__button">
                                     Source Code
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -599,7 +599,7 @@
                             
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Quintessential Analyst</h3>
-                                <p class="portfolio__description">Analyzed 2 decades' worth of data to predict the outcome of football league matches</p>
+                                <p class="portfolio__description">Analysed 2 decades worth of data to predict the outcome of football league matches</p>
                                 <a href="https://github.com/Faraazusmani/The-Quintessential-Analyst" target="_blank" class="button button--flex button--small portfolio__button">
                                     Source Code
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -613,7 +613,7 @@
                             
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Valorant Discord Bot</h3>
-                                <p class="portfolio__description">A Python-script-based discord bot that helps Valorant players to access game resources with the help of predefined commands</p>
+                                <p class="portfolio__description">A Python-script based discord bot that helps Valorant players to access game-resources with the help of predefined commands</p>
                                 <a href="https://github.com/Faraazusmani/ValorantDiscordBot" target="_blank" class="button button--flex button--small portfolio__button">
                                     Source Code
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -781,8 +781,9 @@
                         </div>
                     </div>
 
-                    <form method="post" action="https://script.google.com/macros/s/AKfycbzktzVWdv-tZ_2ApnDdH3tuKDrsML6r5hxTCxi3Z3PKm_jlGcoMOx6hvfxy0o5xSZH6fw/exec" name="f1" class="contact__form grid">
-                    <!-- <form action="" class="contact__form grid"> -->
+                    <!--
+                    <form method="post" action="" name="f1" class="contact__form grid">
+                    <form action="" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -801,20 +802,52 @@
                             <label for="" class="contact__label">Message</label>
                             <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
+                    -->
+
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbzmrOR0NYVV86stSZ2ttpG1zbmu7nuzr9yRl4WcEm1F0UtJrzyn25UkQBUCdY8yt0-x/exec" name="f1" class="contact__form grid">
+                            <div class="contact__inputs grid">
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Name</label>
+                                    <input type="text" class="contact__input" name="name" id="name"/>
+                                    <br>
+                                </div>
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Email</label>
+                                    <input type="email" class="contact__input" name="email" id="email"/>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Project</label>
+                                <input type="text" class="contact__input" name="project" id="project"/>
+                                <br>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Message</label>
+                                <textarea id="" class="contact__input" name="message" id="message" cols="0" rows="7"></textarea>
+                                <br>
+                            </div>
+                            <div class="btn">
+                            <button type="submit" value="submit" class="button btn-primary" id="submit">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                            </div>
+                        </form>
 
 
-                        <div>
-                            <!-- <a href="#" class="button button--flex" onsubmit="alert('Thank You for connecting!')"> -->
-                            <!-- <a href="" class="button button--flex"> -->
+                        <!-- <div>
+                            <a href="#" class="button button--flex" onsubmit="alert('Thank You for connecting!')">
+                            <a href="" class="button button--flex">
                             <button type="submit" value="submit" class="form-submit-button">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            <!-- </a> -->
+                            </a>
                             </button>
-                        </div>
+                        </div> -->
 
                         <script>
-                            const scriptURL = 'https://script.google.com/macros/s/AKfycbzktzVWdv-tZ_2ApnDdH3tuKDrsML6r5hxTCxi3Z3PKm_jlGcoMOx6hvfxy0o5xSZH6fw/exec'
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbzmrOR0NYVV86stSZ2ttpG1zbmu7nuzr9yRl4WcEm1F0UtJrzyn25UkQBUCdY8yt0-x/exec'
                             const form = document.forms['f1']
                           
                             form.addEventListener('submit', e => {
@@ -824,7 +857,8 @@
                                 .then(() => {  window.location.reload(); })
                                 .catch(error => console.error('Error!', error.message))
                             })
-                          </script>
+                        </script>
+
 
                         <!-- <script>
                             const form = document.querySelector("#form")
